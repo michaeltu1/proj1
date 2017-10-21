@@ -1,3 +1,15 @@
 <h3>Trainer</h3>
 <p>Name: <%= @trainer.name if @trainer.name %></p>
 <p>Email: <%= @trainer.email if @trainer.email %></p>
+<br />
+<% Pokemon.where(trainer_id: @id).each do |pkmn| %>
+	Pokemon: <%= pkmn.name %>
+	<br />
+	Level: <%= pkmn.level %>
+	<br />
+	Health: <%= pkmn.health %>
+	<br />
+	<br />
+<% end %>
+
+<br />
