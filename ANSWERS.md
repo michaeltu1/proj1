@@ -11,7 +11,8 @@ The first part creates a button labeled "Throw a Pokeball". Capture_path goes to
 Ca'caw
 
 # Question 4: What did you pass into the redirect_to? If it is a path, what did that path need? If it is not a path, why is it okay not to have a path here?
-
+redirect_to trainer_path(params[:trainer_id])
+The path required the id of the trainer.
 
 # Question 5: Explain how putting this line "flash[:error] = @pokemon.errors.full_messages.to_sentence" shows error messages on your form.
 
