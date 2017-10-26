@@ -1,4 +1,10 @@
-<%= simple_form_for(Pokemon.new, url: trainer_path(@poke.trainer_id)) do |f| %>
+<% if flash[:notice] %>
+	<div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
+<br />
+
+<%= simple_form_for :pokemon do |f| %>
   Pokemon Name: <%= f.input :name %>
   <%= f.button :submit %>
 <% end %>
