@@ -21,3 +21,5 @@ This line makes you go into the _messages.html.erb file which flashes the messag
 # Give us feedback on the project and decal below!
 
 # Extra credit: Link your Heroku deployed app
+
+https://github.com/michaeltu1/proj1.git
